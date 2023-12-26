@@ -26,8 +26,9 @@ jobs:
    - name: download artifactory
      uses: actions/download-artifact@v4
      with:
-      name: artifacts
+      name: hello-artifact
+      path: ./artifacts
    - name: display
-     run: 'cat  artifacts'
+     run: 'cat  ./artifacts/hello.txt'
   
    
